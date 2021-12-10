@@ -52,14 +52,16 @@ console.log("\n")
 }
 
 for (var i=0; i<list.length; i++) {
-  console.log(list[i].ques);
-  console.log(list[i].a);
-  console.log(list[i].b);
-  console.log(list[i].c);
-  console.log(list[i].d);
-
-  var answer = readlineSync.question("Please Enter Your Answer: ");
-  play (list[i].correctAnswer,answer);
-}
-
-console.log("Final score is", score);
+    console.log(list[i].ques);
+    console.log(list[i].a);
+    console.log(list[i].b);
+    console.log(list[i].c);
+    console.log(list[i].d);
+  
+    var answer = readlineSync.question("Please Enter Your Answer: ");
+    play (list[i].correctAnswer,answer);
+  }
+  
+  console.log("Final score is", score);
+  
+  
